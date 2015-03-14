@@ -1,0 +1,13 @@
+<div ng-show="alertVisible" class="fadein fadeout">
+  <h1>{{alertMessage}}</h1>
+</div>
+<form ng-submit="submit()">
+  <input ng-model="username" placeholder="Twitch Username" />
+  <input type="submit" id="submit" value="Submit" />
+</form>
+<ul>
+  <li ng-repeat="follower in followers">
+    {{follower}}
+    {{follower.name}}
+  </li>
+</ul>
